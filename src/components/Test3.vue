@@ -16,7 +16,7 @@
 
 <script>
 
-import HightPosts from "./HightPostsItem.vue"
+import HightPosts from "./HightPostsList.vue"
 
 export default {
   name: 'Test',

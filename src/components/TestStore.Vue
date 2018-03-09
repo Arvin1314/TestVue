@@ -50,7 +50,7 @@ export default {
     },
 
     methods:{
-
+ 
        ...mapMutations([ 
                 'add','reduce'
             ]),

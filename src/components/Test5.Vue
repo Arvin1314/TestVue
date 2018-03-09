@@ -1,21 +1,29 @@
 <template>
-	 <button v-on:click="login">访问</button>
+	<div>
+    <button v-on:click="change">{{content}}</button>
+   <div>
+   <v-hightpostslist :num='3'></v-hightpostslist>
+   </div> 
+  </div>
 </template>
 
 
 <script>
-
+import HightPostsList from "./HightPostsList"
 
 export default {
   name: 'Test',
   data() {
     return {
-      content:''
+      content:'访问'
     }
+  },
+  components:{
+    'v-hightpostslist':HightPostsList
   },
   methods: {
 
-  	getData: function (){
+  	initPosts: function (){
       console.log("getData");
        this.api.HighPosts()
        .then(res => {
@@ -34,7 +42,19 @@ export default {
       })
     },
 
+    change: function() {   
+     this.content ='5565'       
+
+    console.log("change");          
+
+    console.log(this.a)          
+
+    console.log(this.$el)          
+
+    }   
+
   }
+
 }
 
 </script>

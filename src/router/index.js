@@ -6,7 +6,9 @@ import Test2 from '@/components/Test2'
 import Test3 from '@/components/Test3'
 import Test4 from '@/components/Test4'
 import Request from '@/components/Test5'
+
 import store from '@/components/TestStore'
+
 
 Vue.use(Router)
 
